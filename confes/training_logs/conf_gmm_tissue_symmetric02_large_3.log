@@ -1,0 +1,244 @@
+srun: job 34157 queued and waiting for resources
+srun: job 34157 has been allocated resources
+Namespace(device='cuda', dataset='tissue', data_dir='./data', noise_type='symmetric', noise_rate=20, num_classes=8, batch_size=128, num_batches=10000, clustering='gmm', num_samples=165466, model='resnet18', pretrain=False, optimizer='sgd', momentum=0.9, lr=0.05, epochs=10, gamma=0.01, weight_decay=0.0)
+Using downloaded and verified file: /u/home/tei/.medmnist/tissuemnist_128.npz
+Actual Noise Rate:  0.19915873955978872
+Using downloaded and verified file: /u/home/tei/.medmnist/tissuemnist_128.npz
+Train set length:  165466
+Test set length:  47280
+Using ResNet18
+Initializing  model resnet18
+Using SGD. LR: 0.05, WD: 0.0, M: 0.9
+Using CosineAnnealingLR. T_max 10, ETA: 0.0005
+Current sieving threshold is 0.1
+Start eval
+/u/home/tei/.conda/envs/coenv/lib/python3.9/site-packages/torch/nn/modules/conv.py:456: UserWarning: Attempt to open cnn_infer failed: handle=0 error: libcudnn_cnn_infer.so.8: cannot open shared object file: No such file or directory (Triggered internally at ../aten/src/ATen/native/cudnn/Conv_v8.cpp:81.)
+  return F.conv2d(input, weight, bias, self.stride,
+End eval
+/u/home/tei/Data/confes-reihaneh/main.py:140: UserWarning: you are shuffling a 'Tensor' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(clean_labels_epoch)
+Clean Selection success: 114455/143293  79.87480197916157%
+Noisy Selection success: 4116/22173  18.563117304830197%
+Counts of filtered labels
+Counter({3: 7943, 0: 5275, 4: 2906, 6: 2705, 1: 1056, 7: 985, 2: 862, 5: 441})
+Epoch : 0
+Epoch # 0
+Start train
+End train
+Training loss: 1.5777318885136462, Training accuracy: 0.4580759793552754 
+Start test
+Average test loss(weighted):  1.4520, test accuracy:  52.5338
+Class-wise accuracies:
+ [0.6726673245429993, 0.004926108289510012, 0.301729291677475, 0.22648796439170837, 0.4906500577926636, 0.25476840138435364, 0.7501115798950195, 0.3565637767314911, 0.5253384113311768]
+Class-wise F1 scores:
+ [0.680021345615387, 0.009657594375312328, 0.2969483435153961, 0.30550023913383484, 0.3786507844924927, 0.2620270848274231, 0.6313258409500122, 0.39433738589286804, 0.5253384113311768]
+Class-wise AUCs:
+ [0.8563557863235474, 0.7195473909378052, 0.9153013825416565, 0.6639642715454102, 0.8676527738571167, 0.8598486185073853, 0.8634785413742065, 0.8086174130439758, 0.8296285271644592]
+End test
+Current sieving threshold is 0.0
+Start eval
+End eval
+/u/home/tei/Data/confes-reihaneh/main.py:140: UserWarning: you are shuffling a 'Tensor' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(clean_labels_epoch)
+Clean Selection success: 71794/74220  96.73133926165454%
+Noisy Selection success: 30528/91246  33.456809065602876%
+Counts of filtered labels
+Counter({0: 23099, 7: 16611, 6: 15170, 3: 12111, 1: 7498, 4: 6813, 5: 5734, 2: 4210})
+Epoch : 1
+Epoch # 1
+Start train
+End train
+Training loss: 0.18792448681617144, Training accuracy: 0.9310130177800877 
+Start test
+Average test loss(weighted):  3.0342, test accuracy:  55.8291
+Class-wise accuracies:
+ [0.7297065854072571, 0.0058217644691467285, 0.3202146589756012, 0.26737844944000244, 0.566933810710907, 0.18119890987873077, 0.7945719361305237, 0.3404920995235443, 0.5582910180091858]
+Class-wise F1 scores:
+ [0.7101328372955322, 0.011458792723715305, 0.33499687910079956, 0.35430464148521423, 0.4140472710132599, 0.23238205909729004, 0.6481683850288391, 0.42930153012275696, 0.5582910180091858]
+Class-wise AUCs:
+ [0.8700241446495056, 0.7193828821182251, 0.9108941555023193, 0.8264679908752441, 0.8778711557388306, 0.8536816835403442, 0.8784735202789307, 0.8152587413787842, 0.8539594411849976]
+End test
+Current sieving threshold is 0.0
+Start eval
+End eval
+/u/home/tei/Data/confes-reihaneh/main.py:140: UserWarning: you are shuffling a 'Tensor' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(clean_labels_epoch)
+Clean Selection success: 76515/78933  96.93664246892935%
+Noisy Selection success: 30536/86533  35.28827152646967%
+Counts of filtered labels
+Counter({0: 20641, 7: 16838, 6: 13647, 3: 11562, 1: 7481, 5: 6143, 4: 6069, 2: 4152})
+Epoch : 2
+Epoch # 2
+Start train
+End train
+Training loss: 0.09777731204020797, Training accuracy: 0.9639563414840511 
+Start test
+Average test loss(weighted):  3.7984, test accuracy:  56.2225
+Class-wise accuracies:
+ [0.7526541352272034, 0.04433497413992882, 0.3864043056964874, 0.31372103095054626, 0.41970911622047424, 0.2179836481809616, 0.7926077842712402, 0.32257145643234253, 0.5622250437736511]
+Class-wise F1 scores:
+ [0.7064867615699768, 0.07531380653381348, 0.3581099808216095, 0.3998841643333435, 0.4026196002960205, 0.2750716209411621, 0.6515485048294067, 0.40045908093452454, 0.5622250437736511]
+Class-wise AUCs:
+ [0.8637422323226929, 0.7091869711875916, 0.9186631441116333, 0.8486753702163696, 0.8772761225700378, 0.8653435111045837, 0.8771383762359619, 0.7671493291854858, 0.8468362092971802]
+End test
+Current sieving threshold is 0.0
+Start eval
+End eval
+/u/home/tei/Data/confes-reihaneh/main.py:140: UserWarning: you are shuffling a 'Tensor' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(clean_labels_epoch)
+Clean Selection success: 78182/80653  96.93625779574225%
+Noisy Selection success: 30483/84813  35.941424074139576%
+Counts of filtered labels
+Counter({0: 19545, 7: 16951, 6: 13487, 3: 10940, 1: 7152, 4: 7145, 5: 5859, 2: 3734})
+Epoch : 3
+Epoch # 3
+Start train
+End train
+Training loss: 0.0768370379089491, Training accuracy: 0.9725079472520034 
+Start test
+Average test loss(weighted):  3.9757, test accuracy:  56.6920
+Class-wise accuracies:
+ [0.8037586808204651, 0.000895656063221395, 0.5324985384941101, 0.2301226705312729, 0.5099436044692993, 0.34786558151245117, 0.747701108455658, 0.2628360092639923, 0.5669204592704773]
+Class-wise F1 scores:
+ [0.7240058183670044, 0.001789709203876555, 0.3593561351299286, 0.3325127065181732, 0.42816200852394104, 0.31252551078796387, 0.6725286841392517, 0.37876614928245544, 0.5669204592704773]
+Class-wise AUCs:
+ [0.8790799379348755, 0.6234735250473022, 0.9178351163864136, 0.8283119797706604, 0.8747870326042175, 0.8638657331466675, 0.8851575255393982, 0.8021344542503357, 0.8526384830474854]
+End test
+Current sieving threshold is 0.0
+Start eval
+End eval
+/u/home/tei/Data/confes-reihaneh/main.py:140: UserWarning: you are shuffling a 'Tensor' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(clean_labels_epoch)
+Clean Selection success: 79403/81828  97.0364667351029%
+Noisy Selection success: 30529/83638  36.50135106052273%
+Counts of filtered labels
+Counter({7: 17885, 0: 17440, 6: 14276, 3: 11824, 1: 7537, 4: 6429, 5: 5079, 2: 3168})
+Epoch : 4
+Epoch # 4
+Start train
+End train
+Training loss: 0.057854889281964174, Training accuracy: 0.97949427676985 
+Start test
+Average test loss(weighted):  4.0874, test accuracy:  59.0186
+Class-wise accuracies:
+ [0.7954500317573547, 0.0013434841530397534, 0.41204532980918884, 0.2751022279262543, 0.6135351657867432, 0.31516802310943604, 0.7856441140174866, 0.33778977394104004, 0.5901861190795898]
+Class-wise F1 scores:
+ [0.7359975576400757, 0.0026785715017467737, 0.3834628164768219, 0.38117721676826477, 0.4594864845275879, 0.34648028016090393, 0.6798779368400574, 0.44425737857818604, 0.5901861190795898]
+Class-wise AUCs:
+ [0.8878686428070068, 0.7054700255393982, 0.9296717643737793, 0.846049427986145, 0.8922282457351685, 0.8889251947402954, 0.8941344618797302, 0.8285290002822876, 0.8698631525039673]
+End test
+Current sieving threshold is 0.0
+Start eval
+End eval
+/u/home/tei/Data/confes-reihaneh/main.py:140: UserWarning: you are shuffling a 'Tensor' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(clean_labels_epoch)
+Clean Selection success: 83728/86259  97.06581342236753%
+Noisy Selection success: 30423/79207  38.409484010251624%
+Counts of filtered labels
+Counter({0: 17233, 7: 16198, 6: 13134, 3: 11180, 1: 7460, 4: 5473, 5: 5106, 2: 3423})
+Epoch : 5
+Epoch # 5
+Start train
+End train
+Training loss: 0.04430958726009381, Training accuracy: 0.9843834987248136 
+Start test
+Average test loss(weighted):  4.0320, test accuracy:  60.0148
+Class-wise accuracies:
+ [0.786613941192627, 0.0022391402162611485, 0.27370303869247437, 0.3666515350341797, 0.614128828048706, 0.332425057888031, 0.794929027557373, 0.3787512481212616, 0.60014808177948]
+Class-wise F1 scores:
+ [0.7382035255432129, 0.004456327762454748, 0.3378726541996002, 0.4563189148902893, 0.4676763117313385, 0.3610357642173767, 0.6831364035606384, 0.4740543067455292, 0.60014808177948]
+Class-wise AUCs:
+ [0.8874832391738892, 0.6953608989715576, 0.9230051636695862, 0.8622502088546753, 0.8945865631103516, 0.8866524696350098, 0.8963276147842407, 0.8384847044944763, 0.872596263885498]
+End test
+Current sieving threshold is 0.0
+Start eval
+End eval
+/u/home/tei/Data/confes-reihaneh/main.py:140: UserWarning: you are shuffling a 'Tensor' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(clean_labels_epoch)
+Clean Selection success: 85852/88461  97.0506776997773%
+Noisy Selection success: 30345/77005  39.4065320433738%
+Counts of filtered labels
+Counter({0: 17209, 7: 15426, 6: 12804, 3: 10155, 1: 7402, 4: 5186, 5: 4916, 2: 3907})
+Epoch : 6
+Epoch # 6
+Start train
+End train
+Training loss: 0.03140770404595825, Training accuracy: 0.9889765873351625 
+Start test
+Average test loss(weighted):  4.1990, test accuracy:  60.6684
+Class-wise accuracies:
+ [0.8155621290206909, 0.00806090421974659, 0.3571854531764984, 0.38550660014152527, 0.6073018908500671, 0.2783832848072052, 0.7835907340049744, 0.36495518684387207, 0.606683611869812]
+Class-wise F1 scores:
+ [0.7412424087524414, 0.015887025743722916, 0.38558095693588257, 0.47495102882385254, 0.48197880387306213, 0.3445756137371063, 0.6849806904792786, 0.4667576253414154, 0.606683611869812]
+Class-wise AUCs:
+ [0.8909655809402466, 0.6933428049087524, 0.9341021776199341, 0.8784928321838379, 0.8979469537734985, 0.8929132223129272, 0.8952810764312744, 0.8359659314155579, 0.8754322528839111]
+End test
+Current sieving threshold is 0.0
+Start eval
+End eval
+/u/home/tei/Data/confes-reihaneh/main.py:140: UserWarning: you are shuffling a 'Tensor' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(clean_labels_epoch)
+Clean Selection success: 87332/89977  97.06035986974449%
+Noisy Selection success: 30309/75489  40.15022056193618%
+Counts of filtered labels
+Counter({0: 16309, 7: 15358, 6: 12812, 3: 9820, 1: 7351, 4: 5182, 5: 5089, 2: 3568})
+Epoch : 7
+Epoch # 7
+Start train
+End train
+Training loss: 0.019438344356385584, Training accuracy: 0.9931768459985737 
+Start test
+Average test loss(weighted):  4.2534, test accuracy:  60.9602
+Class-wise accuracies:
+ [0.8196505308151245, 0.01656963676214218, 0.370900422334671, 0.41458427906036377, 0.6058177351951599, 0.2824704945087433, 0.7815373539924622, 0.35428816080093384, 0.6096023917198181]
+Class-wise F1 scores:
+ [0.741558313369751, 0.0322440080344677, 0.3965572118759155, 0.49972617626190186, 0.4850285053253174, 0.3483617901802063, 0.6859695315361023, 0.46172380447387695, 0.6096023917198181]
+Class-wise AUCs:
+ [0.8928079605102539, 0.6980279088020325, 0.9337757229804993, 0.8814101219177246, 0.898941159248352, 0.8901048898696899, 0.896325945854187, 0.8406697511672974, 0.8773916363716125]
+End test
+Current sieving threshold is 0.0
+Start eval
+End eval
+/u/home/tei/Data/confes-reihaneh/main.py:140: UserWarning: you are shuffling a 'Tensor' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(clean_labels_epoch)
+Clean Selection success: 88353/91061  97.02616927114791%
+Noisy Selection success: 30246/74405  40.650493918419464%
+Counts of filtered labels
+Counter({0: 15995, 7: 15322, 6: 12714, 3: 9490, 1: 7277, 4: 5093, 5: 5021, 2: 3493})
+Epoch : 8
+Epoch # 8
+Start train
+End train
+Training loss: 0.012113840421113421, Training accuracy: 0.9956849141213301 
+Start test
+Average test loss(weighted):  4.3937, test accuracy:  61.6201
+Class-wise accuracies:
+ [0.8243323564529419, 0.02015226148068905, 0.41860464215278625, 0.4020899534225464, 0.631047785282135, 0.29609444737434387, 0.7689492106437683, 0.3875693380832672, 0.6162013411521912]
+Class-wise F1 scores:
+ [0.7453938126564026, 0.03896103799343109, 0.42010772228240967, 0.497470498085022, 0.49390172958374023, 0.3564789593219757, 0.6930597424507141, 0.4897555708885193, 0.6162013411521912]
+Class-wise AUCs:
+ [0.895051896572113, 0.706398606300354, 0.9353864192962646, 0.8792785406112671, 0.9015504121780396, 0.8909212350845337, 0.8984500169754028, 0.8461405634880066, 0.8799061179161072]
+End test
+Current sieving threshold is 0.0
+Start eval
+End eval
+/u/home/tei/Data/confes-reihaneh/main.py:140: UserWarning: you are shuffling a 'Tensor' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(clean_labels_epoch)
+Clean Selection success: 89310/92062  97.01071017357867%
+Noisy Selection success: 30202/73404  41.144896735872706%
+Counts of filtered labels
+Counter({0: 15812, 7: 14929, 6: 12750, 3: 9483, 1: 7251, 4: 4951, 5: 4905, 2: 3323})
+Epoch : 9
+Epoch # 9
+Start train
+End train
+Training loss: 0.010649166178484595, Training accuracy: 0.996609575381045 
+Start test
+Average test loss(weighted):  4.3049, test accuracy:  61.9797
+Class-wise accuracies:
+ [0.8230794668197632, 0.02821316570043564, 0.42874181270599365, 0.4345752000808716, 0.6043336391448975, 0.29927340149879456, 0.7703776359558105, 0.39866307377815247, 0.6197969317436218]
+Class-wise F1 scores:
+ [0.7450160980224609, 0.05380016937851906, 0.4319615364074707, 0.5185686945915222, 0.497556209564209, 0.3598143458366394, 0.6944310069084167, 0.49593064188957214, 0.6197969317436218]
+Class-wise AUCs:
+ [0.894976019859314, 0.7136172652244568, 0.9392377138137817, 0.8920255899429321, 0.9028050899505615, 0.897127628326416, 0.8988205194473267, 0.8481714129447937, 0.8823144435882568]
+End test
