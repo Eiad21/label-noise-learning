@@ -1,0 +1,105 @@
+srun: job 34073 queued and waiting for resources
+srun: job 34073 has been allocated resources
+Namespace(device='cuda', dataset='tissue', data_dir='./data', noise_type='symmetric', noise_rate=0.4, label_corr=False, batch_size=128, num_classes=8, model='resnet18', momentum=0.9, lr=0.05, epochs=10, gamma=0.01, weight_decay=0.0)
+Using downloaded and verified file: /u/home/tei/.medmnist/tissuemnist_128.npz
+Actual Noise Rate:  0.0
+Using downloaded and verified file: /u/home/tei/.medmnist/tissuemnist_128.npz
+Train set Size:  165466
+Test set Size:  47280
+Using ResNet18
+Initializing  model resnet18
+0.05 0.0 0.9
+10 0.0005
+Set learning rate scheduler to CosineAnnealingLR
+Epoch : 0
+Epoch # 0
+Start train
+/u/home/tei/.conda/envs/coenv/lib/python3.9/site-packages/torch/nn/modules/conv.py:456: UserWarning: Attempt to open cnn_infer failed: handle=0 error: libcudnn_cnn_infer.so.8: cannot open shared object file: No such file or directory (Triggered internally at ../aten/src/ATen/native/cudnn/Conv_v8.cpp:81.)
+  return F.conv2d(input, weight, bias, self.stride,
+End train
+Training loss: 1.173091731233737, Training accuracy: 0.5714104408156359 
+Start test
+New Accuracy
+[0.77256840467453, 0.0, 0.5491949915885925, 0.7360290884971619, 0.14603739976882935, 0.41371479630470276, 0.6286045908927917, 0.05532641336321831, 0.5226311087608337]
+End test
+Epoch : 1
+Epoch # 1
+Start train
+End train
+Training loss: 0.9402596476183137, Training accuracy: 0.6564853202470599 
+Start test
+New Accuracy
+[0.7802175879478455, 0.03896103799343109, 0.3303518295288086, 0.7782825827598572, 0.15405164659023285, 0.5408719182014465, 0.8281403183937073, 0.33266961574554443, 0.6181049346923828]
+End test
+Epoch : 2
+Epoch # 2
+Start train
+End train
+Training loss: 0.8441828497601219, Training accuracy: 0.6925168916877184 
+Start test
+New Accuracy
+[0.8946257829666138, 0.1424093097448349, 0.41979727149009705, 0.5252158045768738, 0.6930840015411377, 0.5685740113258362, 0.702972948551178, 0.2882947027683258, 0.6427453756332397]
+End test
+Epoch : 3
+Epoch # 3
+Start train
+End train
+Training loss: 0.767587824561111, Training accuracy: 0.7215802642234659 
+Start test
+New Accuracy
+[0.8170128464698792, 0.29511865973472595, 0.3291592001914978, 0.5488414168357849, 0.7497773766517639, 0.4014532268047333, 0.7536827325820923, 0.6664770245552063, 0.688557505607605]
+End test
+Epoch : 4
+Epoch # 4
+Start train
+End train
+Training loss: 0.6801824379317629, Training accuracy: 0.753810450485296 
+Start test
+New Accuracy
+[0.7867457866668701, 0.23779667913913727, 0.6350626349449158, 0.6272149085998535, 0.4915405213832855, 0.5013623833656311, 0.7878760695457458, 0.7163987755775452, 0.6960659623146057]
+End test
+Epoch : 5
+Epoch # 5
+Start train
+End train
+Training loss: 0.5745070694217549, Training accuracy: 0.7919512165641279 
+Start test
+New Accuracy
+[0.6931091547012329, 0.3054187297821045, 0.6463923454284668, 0.687869131565094, 0.6135351657867432, 0.2906448543071747, 0.8725113868713379, 0.5524107813835144, 0.669818103313446]
+End test
+Epoch : 6
+Epoch # 6
+Start train
+End train
+Training loss: 0.4285904975796705, Training accuracy: 0.8436536811187797 
+Start test
+New Accuracy
+[0.7961754202842712, 0.4034930467605591, 0.4597495496273041, 0.7105860710144043, 0.6393588781356812, 0.4495912790298462, 0.7281492948532104, 0.6391693949699402, 0.6909475326538086]
+End test
+Epoch : 7
+Epoch # 7
+Start train
+End train
+Training loss: 0.23380459250978786, Training accuracy: 0.9159464784306142 
+Start test
+New Accuracy
+[0.8200461864471436, 0.19838781654834747, 0.6064400672912598, 0.7089959383010864, 0.50400710105896, 0.4504995346069336, 0.7472547292709351, 0.5730336904525757, 0.6790609359741211]
+End test
+Epoch : 8
+Epoch # 8
+Start train
+End train
+Training loss: 0.08196147664955025, Training accuracy: 0.9738133513833658 
+Start test
+New Accuracy
+[0.799868106842041, 0.31930139660835266, 0.5193798542022705, 0.6853702664375305, 0.4238646626472473, 0.5767484307289124, 0.7479689121246338, 0.6715971827507019, 0.6880075931549072]
+End test
+Epoch : 9
+Epoch # 9
+Start train
+End train
+Training loss: 0.0247543616107271, Training accuracy: 0.994911341302745 
+Start test
+New Accuracy
+[0.8089680075645447, 0.3291535973548889, 0.4794275462627411, 0.6799182295799255, 0.5316117405891418, 0.47956404089927673, 0.7386840581893921, 0.6734461784362793, 0.690693736076355]
+End test
